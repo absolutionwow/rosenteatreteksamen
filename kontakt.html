@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosenteatret</title>
+    <link rel="icon" type="image/x-icon" href="/img/rosefavicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="header"></div>
+
+
+  </div>
+  <div class="contactHighlight">
+    <h1 class="headlineText">KONTAKT</h1>
+
+  </div>
+
+  <div class="articleContainer">
+    <h2 class="articleDescription">Tak fordi du tager kontakt til os</h2>
+    <p class="articleText">Inden du kan blive medlem af Rosenteatret, får du en rundvisning på teatret. Her snakker vi om hvornår den næste forestilling er og hvad teatret kan gøre for dig.</p>
+  </div>
+
+
+  <form class="formContainer" action="messagety.php" method="get">
+    <div class="formGroup">
+        <h1 class="formPrompt">Navn</h1>
+        <input class="formInput" type="text" name="name" placeholder="Anders Andersen">
+    </div>
+
+    <div class="formGroup">
+        <h1 class="formPrompt">Adresse</h1>
+        <input name="add"class="formInput" type="text" placeholder="Eksempelvej 1">
+    </div>
+
+    <div class="formGroup">
+        <h1 class="formPrompt">Email</h1>
+        <input name="email" class="formInput" type="text" placeholder="eksempel@mail.com">
+    </div>
+
+    <div class="formGroup">
+        <h1 class="formPrompt">Besked</h1>
+        <textarea class="formMessage"  name="comment" placeholder="Skriv noget..."></textarea>
+    </div>
+
+    <div class="formGroup">
+        <button class="submitbtn" type="submit">Send</button>
+        </div>
+    
+      </form>
+
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>

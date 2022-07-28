@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosenteatret</title>
+    <link rel="icon" type="image/x-icon" href="/img/rosefavicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="header"></div>
+  <div class="ticket">
+    <h1 class="ticketText">DÆKSPARK</h1>
+    <h2 class="ticketCaption">28/5 - 31/5</h2>
+  </div>
+
+  <form class="formContainer" action="confirmed.php" method="get">
+    <div class="formGroup">
+        <h1 class="formPrompt">Navn</h1>
+        <input class="formInput" type="text" name="name" placeholder="Anders Andersen">
+    </div>
+
+    <div class="formGroup">
+        <h1 class="formPrompt">Adresse</h1>
+        <input name="add"class="formInput" type="text" placeholder="Eksempelvej 1">
+    </div>
+
+    <div class="formGroup">
+        <h1 class="formPrompt">Email</h1>
+        <input name="email" class="formInput" type="text" placeholder="eksempel@mail.com">
+    </div>
+
+    <div class="formButton">
+        <h1 class="formPrompt">Antal billetter</h1>
+        <div class="incrementContainer">
+        <input class="buttonIncrement" type="button" onclick="incrementValueDown()" value="-">
+        <input name="number" class="buttonValue" type="text" id="number" value="1">
+        <input class="buttonIncrement" type="button" onclick="incrementValueUp()" value="+">
+    </div>
+    </div>
+    <div class="formGroup">
+    <button class="submitbtn" type="submit">Bekræft</button>
+    </div>
+
+  </form>
+
+
+<div id="footer"></div>
+<script src="js/main.js"></script>
+<script src="js/components.js"></script>
+</body>
+</html>
